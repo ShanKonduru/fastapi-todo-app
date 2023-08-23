@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "todo-app"
+version = "0.1.0"
+description = "todo add using fastAPI"
+authors = ["ShanKonduru <ShanKonduru@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "todo_app"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.101.1"
+uvicorn = "^0.23.2"
+Jinja2 = "^3.1.2"
+python-multipart = "^0.0.6"
+SQLAlchemy = "^2.0.20"
+
+[tool.poetry.group.dev.dependencies]
+fastapi = "^0.101.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
